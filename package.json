@@ -1,0 +1,17 @@
+{
+  "name": "chat-management",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "tsc && node scripts/build.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "private": "true",
+  "devDependencies": {
+    "@types/chrome": "^0.3.7",
+    "typescript": "^7.0.2"
+  }
+}

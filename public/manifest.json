@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"ChatManagement","version":"0.1.0","description":"Cerca e seleziona le conversazioni presenti nella pagina.","permissions":["activeTab","scripting"],"action":{"default_popup":"index.html"}}
