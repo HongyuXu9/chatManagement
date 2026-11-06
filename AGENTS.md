@@ -11,5 +11,6 @@
 - Non registrare contenuti, titoli o credenziali nella console per impostazione predefinita.
 - Verificare solo il comportamento coinvolto. Eseguire la build quando cambiano import o risorse distribuite; evitare test estranei al task.
 - Aggiornare la documentazione quando cambiano struttura o comandi.
+- Mantenere la documentazione in `docs/`: obiettivi in `obiettivi.md`, specifica in `progetto.md`, attività e avanzamento in `attivita.md`. Consultare solo i documenti pertinenti al task e aggiornare lo stato delle attività coinvolte. Il README principale contiene i collegamenti e le istruzioni di avvio.
 - Al termine di ogni intervento, dopo le verifiche pertinenti, creare il commit e fare push sul branch corrente senza chiedere ulteriore conferma, come autorizzato dall'utente. Includere solo le modifiche pertinenti; non sovrascrivere la cronologia remota con force push.
 - Alla fine riportare soltanto file modificati, riepilogo e verifiche effettuate.

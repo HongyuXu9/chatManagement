@@ -1,5 +1,12 @@
 # ChatManagement
 
+## Documentazione
+
+- [Indice della documentazione](docs/README.md)
+- [Obiettivi](docs/obiettivi.md)
+- [Specifica del progetto](docs/progetto.md)
+- [Attività da fare](docs/attivita.md)
+
 ## Anteprima e debug
 
 Eseguire `npm run build`, poi `npm run preview` e aprire http://127.0.0.1:4173. Premere **Carica esempi** per provare ricerca e selezione senza accedere agli account. La console integrata mostra gli ultimi 100 eventi e gli errori; **Svuota console** li cancella. In demo l'apertura delle chat è disabilitata. La lettura reale richiede l'estensione installata. I log restano in memoria e si azzerano chiudendo la pagina o il popup.
