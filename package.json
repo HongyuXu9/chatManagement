@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "scripts": {
     "build": "tsc && node scripts/build.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "preview": "node scripts/preview.mjs"
   },
   "keywords": [],
   "author": "",

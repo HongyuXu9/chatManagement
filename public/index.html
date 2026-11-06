@@ -1,1 +1,42 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><title>ChatManagement</title><link rel="stylesheet" href="style.css"></head><body><header><h1>ChatManagement</h1><p>Le tue conversazioni, al posto giusto.</p></header><button id="scan">Leggi chat dalla pagina</button><p id="status" role="status">Apri ChatGPT, Gemini o Google AI Mode nel browser.</p><label>Cerca nel titolo <input id="search" type="search" placeholder="Filtra le conversazioni"></label><label class="selection"><input id="all" type="checkbox"> Seleziona i risultati</label><p id="count"></p><ul id="chats"></ul><button id="open" disabled>Apri chat selezionata</button><p class="note">Questa prima base legge i collegamenti già caricati nella pagina. Le operazioni in blocco saranno aggiunte dopo la verifica dei singoli servizi.</p><script type="module" src="popup.js"></script></body></html>
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatManagement</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<small>CM · ANTEPRIMA 0.1</small>
+<h1>ChatManagement</h1>
+<p>Ritrova le conversazioni e seleziona quelle che ti interessano.</p>
+</header>
+<main>
+<section>
+<h2>Le tue chat</h2>
+<button id="scan">Leggi chat dalla pagina</button> <button id="demo">Carica esempi</button>
+<p id="status" role="status">Apri ChatGPT, Gemini o Google AI Mode nel browser.</p>
+<label>Cerca nel titolo <input id="search" type="search" placeholder="Prova PC oppure viaggio…">
+</label>
+<label class="selection">
+<input id="all" type="checkbox"> Seleziona i risultati</label>
+<p id="count">
+</p>
+<ul id="chats">
+</ul>
+<button id="open" disabled>Apri chat selezionata</button>
+<p class="note">La lettura riguarda i collegamenti caricati nella pagina. Spostamento, archiviazione ed eliminazione in blocco sono ancora da implementare.</p>
+</section>
+<section>
+<h2>Console di debug</h2>
+<p class="note">Ultimi 100 eventi locali. Nessun invio a servizi esterni.</p>
+<button id="clear">Svuota console</button>
+<pre id="logs" role="log" aria-live="polite">
+</pre>
+</section>
+</main>
+<script type="module" src="popup.js">
+</script>
+</body>
+</html>

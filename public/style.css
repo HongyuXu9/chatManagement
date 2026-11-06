@@ -1,1 +1,124 @@
-body{width:390px;max-height:560px;overflow:auto;box-sizing:border-box;margin:0;padding:22px;background:#111827;color:#e5e7eb;font:14px system-ui}h1{font-size:24px;margin:0}header p,.note{color:#aab7c8}button{background:#7dd3fc;color:#102034;border:0;border-radius:8px;padding:10px;cursor:pointer}button:disabled{opacity:.4;cursor:default}input[type=search]{display:block;box-sizing:border-box;width:100%;margin:8px 0;padding:10px;border-radius:8px;border:1px solid #526176;background:#1f2937;color:white}.selection{display:block;margin-top:16px}ul{list-style:none;padding:0}li{padding:10px 0;border-bottom:1px solid #334155}li label{display:flex;gap:10px;align-items:start}.note{font-size:12px;line-height:1.5}
+:root {
+  color-scheme:dark
+}
+* {
+  box-sizing:border-box
+}
+body {
+  width:430px;
+  margin:0;
+  padding:22px;
+  background:#0b1120;
+  color:#e5e7eb;
+  font:14px system-ui
+}
+body.preview {
+  width:auto;
+  max-width:1150px;
+  margin:auto;
+  padding:36px
+}
+h1 {
+  font-size:30px;
+  letter-spacing:-1px;
+  margin:10px 0
+}
+h2 {
+  font-size:18px
+}
+header p,.note,#count {
+  color:#aab7c8
+}
+small {
+  color:#7dd3fc;
+  font-weight:bold;
+  letter-spacing:1px
+}
+header {
+  margin-bottom:24px
+}
+section {
+  background:#111c30;
+  border:1px solid #293951;
+  border-radius:14px;
+  padding:18px;
+  margin-bottom:16px
+}
+button {
+  background:#7dd3fc;
+  color:#102034;
+  border:0;
+  border-radius:8px;
+  padding:10px;
+  cursor:pointer;
+  font:inherit
+}
+button:disabled {
+  opacity:.4;
+  cursor:default
+}
+input[type=search] {
+  display:block;
+  width:100%;
+  margin:8px 0;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #526176;
+  background:#0c1628;
+  color:white;
+  font:inherit
+}
+.selection {
+  display:block;
+  margin-top:16px
+}
+ul {
+  list-style:none;
+  padding:0;
+  max-height:320px;
+  overflow:auto
+}
+li {
+  padding:14px 0;
+  border-bottom:1px solid #293951
+}
+li label {
+  display:flex;
+  gap:10px;
+  align-items:start
+}
+.note {
+  font-size:12px;
+  line-height:1.6
+}
+#status {
+  border-left:3px solid #7dd3fc;
+  padding-left:10px;
+  line-height:1.5
+}
+#logs {
+  font:12px/1.8 Consolas,monospace;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+  background:#080f1c;
+  padding:12px;
+  border-radius:8px;
+  max-height:260px;
+  overflow:auto;
+  min-height:100px;
+  color:#b9d7bd
+}
+.preview main {
+  display:grid;
+  grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);
+  gap:20px;
+  align-items:start
+}
+@media(max-width:750px) {
+  .preview main {
+    grid-template-columns:1fr
+  }
+  body.preview {
+    padding:18px
+  }
+}
